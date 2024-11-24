@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Planner</title>
+  <link rel="stylesheet" href="GenAi.css">
+</head>
+<body>
+<div class="container">
+  <h1>Date Planner</h1>
+  <p>Enter the details below to get a personalized date idea!</p>
+
+  <form id="date-form">
+    <label for="DATE-PLACE">Location:</label>
+    <input type="text" id="DATE-PLACE" placeholder="Enter a location" required>
+
+    <label for="START-DAY">Start Date:</label>
+    <input type="date" id="START-DAY" required>
+
+    <label for="END-DAY">End Date:</label>
+    <input type="date" id="END-DAY" required>
+
+    <label for="NUMBER-OF-PEOPLE">Number of People:</label>
+    <input type="number" id="NUMBER-OF-PEOPLE" placeholder="e.g., 2" min="1" required>
+
+    <button type="button" id="suggestion-button">Get Date Idea</button>
+  </form>
+</div>
+<script src="GenAi.js"></script>
+</body>
+</html>
